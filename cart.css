@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+/* UMA RACING Branding Theme */
+
+body {
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.star {
+  color: yellow;
+}
+
+/* Global Headings */
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #b90000; /* UMA Red */
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #111;
+}
+
+h4 {
+  font-size: 20px;
+  color: #333;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #4a4a4a;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+/* Product Section */
+#Product1 {
+  text-align: center;
+}
+
+#Product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#Product1 .pro {
+  background-color: white;
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  margin: 15px 0;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+#Product1 .pro:hover {
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+
+#Product1 .pro img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+#Product1 .pro img:hover {
+  transform: scale(1.05);
+}
+
+/* Description inside product */
+#Product1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#Product1 .pro .des span {
+  color: #777;
+  font-size: 12px;
+}
+
+#Product1 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #b90000; /* UMA Red */
+}
+
+#Product1 .pro .des i {
+  font-size: 12px;
+  color: #ffcc00;
+}
+
+/* Cart Icon */
+#Product1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #ffeded;
+  font-weight: 500;
+  color: #b90000;
+  border: 1px solid #ffc1c1;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+#Product1 .pro .cart:hover {
+  background-color: #ffe5e5;
+  color: #8a0000;
+}
+
+.name-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-cart h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.name-cart img {
+  margin-left: 10px;
+}
+
+button {
+  background-color: #b90000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8a0000;
+}
+
+/* Cart Page Styling */
+body {
+  font-family: 'Spartan', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.product-image {
+  width: 120px; /* Adjust this based on the homepage image size */
+  height: 120px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Details of each cart item */
+.item-details {
+  flex: 1;
+}
+
+.item-details strong {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.item-details p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Quantity controls form */
+.quantity-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #7b0dbb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #7b0dbb;
+}
+
+/* Actions (delete, checkout buttons) */
+.delete-form, .checkout-form {
+  display: inline-block;
+}
+
+/* Ensuring no overflow issues for the cart */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
